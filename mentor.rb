@@ -5,7 +5,7 @@ class Mentor
   attr_accessor :name
 
   # インスタンスを初期化するための、特別なメソッド
-  def initialize
+  def initialize(name)
     self.name = name
   end
 
@@ -21,10 +21,10 @@ class RailsMentor < Mentor
   end
 end
 # インスタンスの生成と、変数への代入
-kirameki = Mentor.new
-kirameki.name = "煌木"
-akaide = RailsMentor.new
-akaide.name = "赤出"
+kirameki = Mentor.new("煌木")
+#kirameki.name = "煌木"
+akaide = RailsMentor.new("赤出")
+#akaide.name = "赤出"
 
 # インスタンスの使用
 kirameki.job
